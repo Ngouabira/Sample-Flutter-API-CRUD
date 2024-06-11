@@ -21,7 +21,7 @@ class ArticleService {
         throw Exception('Failed to load articles');
       }
     } catch (e) {
-      throw Exception("Impossible de charger les données");
+      throw Exception(e.toString());
     }
   }
 

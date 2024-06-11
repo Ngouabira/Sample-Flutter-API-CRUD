@@ -75,7 +75,9 @@ class _HomePageState extends State<HomePage> {
           return ListTile(
             title: Text(listArticle[index].title),
             subtitle: Text(listArticle[index].description),
-            leading: const CircleAvatar(),
+            leading: const CircleAvatar(
+              backgroundImage: AssetImage('images/1.png'),
+            ),
             trailing: Wrap(
               children: [
                 IconButton(
